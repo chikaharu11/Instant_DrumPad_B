@@ -13,6 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/src/main/res/raw/
 /app/release/
-/app/src/main/assets/
