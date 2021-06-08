@@ -909,7 +909,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
         mp = MediaPlayer()
 
-        supportActionBar?.title ="chirper_c_01"
+        supportActionBar?.title ="break_a_01"
 
 
             val audioUri = MediaStore.Audio.Media.INTERNAL_CONTENT_URI
@@ -1012,37 +1012,37 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 .setMaxStreams(20)
                 .build()
 
-        sound1 = soundPool.load(assets.openFd("boos_a_01.ogg"), 1)
+        sound1 = soundPool.load(assets.openFd("ca_snare01.ogg"), 1)
 
-        sound2 = soundPool.load(assets.openFd("boos_g_01.ogg"), 1)
+        sound2 = soundPool.load(assets.openFd("b_clhat_01.ogg"), 1)
 
-        sound3 = soundPool.load(assets.openFd("worp_a_02.ogg"), 1)
+        sound3 = soundPool.load(assets.openFd("b_fizz_01.ogg"), 1)
 
-        sound4 = soundPool.load(assets.openFd("worp_c_03.ogg"), 1)
+        sound4 = soundPool.load(assets.openFd("b_conga_01.ogg"), 1)
 
-        sound5 = soundPool.load(assets.openFd("break_a_05.ogg"), 1)
+        sound5 = soundPool.load(assets.openFd("b_conga_02.ogg"), 1)
 
-        sound6 = soundPool.load(assets.openFd("boos_a_03.ogg"), 1)
+        sound6 = soundPool.load(assets.openFd("b_conga_03.ogg"), 1)
 
-        sound7 = soundPool.load(assets.openFd("boos_a_02.ogg"), 1)
+        sound7 = soundPool.load(assets.openFd("b_ophat_02.ogg"), 1)
 
-        sound8 = soundPool.load(assets.openFd("break_ca_01.ogg"), 1)
+        sound8 = soundPool.load(assets.openFd("ca_kick01.ogg"), 1)
 
-        sound9 = soundPool.load(assets.openFd("break_ca_04.ogg"), 1)
+        sound9 = soundPool.load(assets.openFd("ca_kick02.ogg"), 1)
 
-        sound10 = soundPool.load(assets.openFd("break_ca_06.ogg"), 1)
+        sound10 = soundPool.load(assets.openFd("break_b_01.ogg"), 1)
 
-        sound11 = soundPool.load(assets.openFd("goingbass_c_01.ogg"), 1)
+        sound11 = soundPool.load(assets.openFd("break_b_04.ogg"), 1)
 
-        sound12 = soundPool.load(assets.openFd("goingbass_c_02.ogg"), 1)
+        sound12 = soundPool.load(assets.openFd("chirper_a_01.ogg"), 1)
 
-        sound13 = soundPool.load(assets.openFd("goingbass_c_03.ogg"), 1)
+        sound13 = soundPool.load(assets.openFd("chirper_a_02.ogg"), 1)
 
-        sound14 = soundPool.load(assets.openFd("ca_kick01.ogg"), 1)
+        sound14 = soundPool.load(assets.openFd("goingbass_a_02.ogg"), 1)
 
-        sound15 = soundPool.load(assets.openFd("ca_kick02.ogg"), 1)
+        sound15 = soundPool.load(assets.openFd("goingbass_a_03.ogg"), 1)
 
-        lmp = LoopMediaPlayer.create(this, Uri.parse("android.resource://" + packageName + "/raw/" + R.raw.chirper_c_01))
+        lmp = LoopMediaPlayer.create(this, Uri.parse("android.resource://" + packageName + "/raw/" + R.raw.break_a_01))
 
 
         imageView.setOnTouchListener { _, event ->
