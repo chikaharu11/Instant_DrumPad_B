@@ -89,30 +89,20 @@
     <string name="back">back</string>
 
     <string-array name="spinnerItems">
-        <item>Bass Drum [BD]</item>
-        <item>Clap [CP]</item>
-        <item>Claves [CL]</item>
-        <item>Closed Hi Hat [CH]</item>
-        <item>Congas [HC-MC-LC]</item>
-        <item>Cowbell [CB]</item>
-        <item>Cymbal [CY]</item>
-        <item>Maracas [MA]</item>
-        <item>Open Hi Hat [OH]</item>
-        <item>Rimshot [RS]</item>
-        <item>Snare Drum [SD]</item>
-        <item>Tom Toms [LT-MT-HT]</item>
-        <item>Loops</item>
+        <item>[125bpm]</item>
+        <item>[130bpm]</item>
+        <item>[135bpm]</item>
+        <item>[140bpm]</item>
         <item>Internal sounds</item>
         <item>External sounds</item>
         <item>Sounds in Music folder</item>
     </string-array>
 
     <string-array name="spinnerItems2">
-        <item>Loop [85bpm]</item>
-        <item>Loop [95bpm]</item>
-        <item>Loop [105bpm]</item>
-        <item>Loop [124bpm]</item>
-        <item>Loop [132bpm]</item>
+        <item>[125bpm]</item>
+        <item>[130bpm]</item>
+        <item>[135bpm]</item>
+        <item>[140bpm]</item>
         <item>Internal sounds</item>
         <item>External sounds</item>
         <item>Sounds in Music folder</item>
