@@ -19,8 +19,8 @@
         <item name="android:autoSizeTextType">uniform</item>
     </style>
 
-    <color name="colorPrimary">#5A5A66</color>
-    <color name="colorPrimaryDark">#e2e3e3</color>
+    <color name="colorPrimary">#A66464</color>
+    <color name="colorPrimaryDark">#EDCB96</color>
     <color name="colorAccent">#8BC34A</color>
-    <color name="colorControlHighlight">#EC7357</color>
+    <color name="colorControlHighlight">#F06A71</color>
 </resources>
