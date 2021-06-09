@@ -136,21 +136,21 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView.text = "boos_a_01"
-        textView2.text = "boos_g_01"
-        textView3.text = "worp_a_02"
-        textView4.text = "worp_c_03"
-        textView5.text = "break_a_05"
-        textView6.text = "boos_a_03"
-        textView7.text = "boos_a_02"
-        textView8.text = "break_ca_01"
-        textView9.text = "break_ca_04"
-        textView10.text = "break_ca_06"
-        textView11.text = "goingbass_c_01"
-        textView12.text = "goingbass_c_02"
-        textView13.text = "goingbass_c_03"
-        textView14.text = "ca_kick01"
-        textView15.text = "ca_kick02"
+        textView.text = "ca_snare01"
+        textView2.text = "b_clhat_01"
+        textView3.text = "b_fizz_01"
+        textView4.text = "b_conga_01"
+        textView5.text = "b_conga_02"
+        textView6.text = "b_conga_03"
+        textView7.text = "b_ophat_02"
+        textView8.text = "ca_kick01"
+        textView9.text = "ca_kick02"
+        textView10.text = "break_b_01"
+        textView11.text = "break_b_04"
+        textView12.text = "chirper_a_01"
+        textView13.text = "chirper_a_02"
+        textView14.text = "goingbass_a_02"
+        textView15.text = "goingbass_a_03"
 
         MobileAds.initialize(this) {}
 
