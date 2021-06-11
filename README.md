@@ -1,4 +1,4 @@
-# Instant_DrumPad_TR-808
-スマホアプリ(Android) インスタントドラムパッドTR-808のソースコードです。
+# Instant_DrumPad_BreakBeats
+スマホアプリ(Android) インスタントドラムパッド ブレイクビーツのソースコードです。
 
 drawbleフォルダとrawフォルダのoggファイルはアップロードされていません。
