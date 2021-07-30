@@ -929,7 +929,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
         val adapter3 = ArrayAdapter.createFromResource(this, R.array.spinnerItems, android.R.layout.simple_spinner_item)
 
-        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapter3.setDropDownViewResource(R.layout.custom_spinner_dropdown)
 
 
 
@@ -1774,7 +1774,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
         val adapterC = ArrayAdapter.createFromResource(this, R.array.spinnerItems2, android.R.layout.simple_spinner_item)
 
-        adapterC.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapterC.setDropDownViewResource(R.layout.custom_spinner_dropdown)
 
 
         chSpinner.adapter = adapterC
@@ -1955,6 +1955,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         }
 
             button4.setOnClickListener {
+                try {
                 val myDir = this.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS).toString() + "/showwavespics.png"
                 FFmpeg.execute("-i $audioName -filter_complex showwavespic=s=2560x1280:colors=blue:scale=0 -y $myDir")
 
@@ -2100,6 +2101,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 button3.setOnClickListener {
                     dialog.cancel()
                 }
+                } catch (e: Exception) {
+                    Toast.makeText(applicationContext,
+                        R.string.error,
+                        Toast.LENGTH_LONG).show()
+                }
 
             }
 
@@ -2154,6 +2160,16 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
                 }
 
+                return true
+            }
+
+            R.id.menuPlus -> {
+                lmp.volumePlus()
+                return true
+            }
+
+            R.id.menuMinus -> {
+                lmp.volumeMinus()
                 return true
             }
 
