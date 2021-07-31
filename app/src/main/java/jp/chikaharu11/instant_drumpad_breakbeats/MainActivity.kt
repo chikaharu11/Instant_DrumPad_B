@@ -26,6 +26,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import com.arthenica.mobileffmpeg.FFmpeg
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
@@ -1046,63 +1047,81 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
 
         imageView.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound1, 1.0f, 1.0f, 1, 0, 1.0f)
                 }
                 false
         }
 
         imageView2.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound2, 1.0f, 1.0f, 1, 0, 1.0f)
                 }
                 false
         }
 
         imageView3.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound3, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView4.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound4, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView5.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound5, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView6.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound6, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView7.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound7, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView8.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound8, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView9.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound9, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
@@ -1110,42 +1129,54 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         }
 
         imageView10.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound10, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView11.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound11, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView12.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound12, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView13.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound13, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView14.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound14, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
         }
 
         imageView15.setOnTouchListener { _, event ->
-                if (event.action == MotionEvent.ACTION_DOWN) {
+            if (listView.isVisible) {
+                listView.visibility = View.INVISIBLE
+            } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound15, 1.0f, 1.0f, 0, 0, 1.0f)
                 }
                 false
@@ -1243,6 +1274,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     override fun clicked2(soundList: SoundList) {
         when {
             radioButton.isChecked && radioButton18.isChecked -> {
+                imageView.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound1 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1250,6 +1283,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton2.isChecked && radioButton18.isChecked -> {
+                imageView2.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView2.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound2 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1257,6 +1292,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView2.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton3.isChecked && radioButton18.isChecked -> {
+                imageView3.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView3.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound3 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1264,6 +1301,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView3.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton4.isChecked && radioButton18.isChecked -> {
+                imageView4.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView4.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound4 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1271,6 +1310,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView4.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton5.isChecked && radioButton18.isChecked -> {
+                imageView5.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView5.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound5 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1278,6 +1319,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView5.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton6.isChecked && radioButton18.isChecked -> {
+                imageView6.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView6.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound6 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1285,6 +1328,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView6.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton7.isChecked && radioButton18.isChecked -> {
+                imageView7.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView7.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound7 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1292,6 +1337,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView7.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton8.isChecked && radioButton18.isChecked -> {
+                imageView8.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView8.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound8 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1299,6 +1346,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView8.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton9.isChecked && radioButton18.isChecked -> {
+                imageView9.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView9.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound9 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1306,6 +1355,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView9.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton10.isChecked && radioButton18.isChecked -> {
+                imageView10.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView10.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound10 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1313,6 +1364,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView10.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton11.isChecked && radioButton18.isChecked -> {
+                imageView11.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView11.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound11 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1320,6 +1373,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView11.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton12.isChecked && radioButton18.isChecked -> {
+                imageView12.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView12.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound12 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1327,6 +1382,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView12.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton13.isChecked && radioButton18.isChecked -> {
+                imageView13.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView13.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound13 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1334,6 +1391,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView13.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton14.isChecked && radioButton18.isChecked -> {
+                imageView14.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView14.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound14 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1341,6 +1400,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView14.text = soundList.name.replaceBeforeLast("/", "").replace("/", "").replaceAfterLast(".", "").replace(".", "")
             }
             radioButton15.isChecked && radioButton18.isChecked -> {
+                imageView15.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView15.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound15 = soundPool.load(soundList.name, 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1356,6 +1417,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 }
             }
             radioButton.isChecked && radioButton19.isChecked -> {
+                imageView.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound1 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1363,6 +1426,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton2.isChecked && radioButton19.isChecked -> {
+                imageView2.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView2.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound2 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1370,6 +1435,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView2.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton3.isChecked && radioButton19.isChecked -> {
+                imageView3.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView3.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound3 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1377,6 +1444,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView3.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton4.isChecked && radioButton19.isChecked -> {
+                imageView4.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView4.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound4 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1384,6 +1453,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView4.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton5.isChecked && radioButton19.isChecked -> {
+                imageView5.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView5.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound5 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1391,6 +1462,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView5.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton6.isChecked && radioButton19.isChecked -> {
+                imageView6.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView6.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound6 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1398,6 +1471,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView6.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton7.isChecked && radioButton19.isChecked -> {
+                imageView7.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView7.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound7 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1405,6 +1480,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView7.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton8.isChecked && radioButton19.isChecked -> {
+                imageView8.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView8.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound8 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1412,6 +1489,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView8.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton9.isChecked && radioButton19.isChecked -> {
+                imageView9.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView9.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound9 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1419,6 +1498,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView9.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton10.isChecked && radioButton19.isChecked -> {
+                imageView10.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView10.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound10 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1426,6 +1507,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView10.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton11.isChecked && radioButton19.isChecked -> {
+                imageView11.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView11.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound11 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1433,6 +1516,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView11.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton12.isChecked && radioButton19.isChecked -> {
+                imageView12.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView12.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound12 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1440,6 +1525,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView12.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton13.isChecked && radioButton19.isChecked -> {
+                imageView13.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView13.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound13 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1447,6 +1534,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView13.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton14.isChecked && radioButton19.isChecked -> {
+                imageView14.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView14.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound14 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -1454,6 +1543,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 textView14.text = soundList.name.replaceAfterLast(".", "").replace(".", "")
             }
             radioButton15.isChecked && radioButton19.isChecked -> {
+                imageView15.setColorFilter(Color.parseColor("#6B6A71"))
+                handler.postDelayed({ imageView15.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound15 = soundPool.load(assets.openFd(soundList.name), 1)
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
@@ -2114,6 +2205,9 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         when (item.itemId) {
 
             R.id.menu1 -> {
+                if (soundListView.isVisible) {
+                    soundListView.visibility = View.INVISIBLE
+                }
                 if (switch1.isChecked) {
                     lmp.stop()
                     soundPool.autoPause()
@@ -2150,6 +2244,9 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             }
 
             R.id.menu8 -> {
+                if (soundListView.isVisible) {
+                    soundListView.visibility = View.INVISIBLE
+                }
                 when {
 
                     Build.VERSION.SDK_INT < Build.VERSION_CODES.Q -> Toast.makeText(applicationContext, R.string.menu8, Toast.LENGTH_LONG).show()
@@ -2237,7 +2334,17 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             }
 
             R.id.menu10 -> {
+                if (soundListView.isVisible) {
+                    soundListView.visibility = View.INVISIBLE
+                }
                 selectCh()
+                return true
+            }
+
+            R.id.action_settings -> {
+                if (soundListView.isVisible) {
+                    soundListView.visibility = View.INVISIBLE
+                }
                 return true
             }
 
