@@ -98,20 +98,21 @@
     <string name="highest">音量:Highest</string>
 
     <string-array name="spinnerItems">
-        <item>[125bpm]</item>
-        <item>[130bpm]</item>
-        <item>[135bpm]</item>
-        <item>[140bpm]</item>
+        <item>Drum Sets</item>
+        <item>[125bpm Loops]</item>
+        <item>[130bpm Loops]</item>
+        <item>[135bpm Loops]</item>
+        <item>[140bpm Loops]</item>
         <item>内部サウンド</item>
         <item>外部サウンド</item>
         <item>Musicフォルダのサウンド"</item>
     </string-array>
 
     <string-array name="spinnerItems2">
-        <item>[125bpm]</item>
-        <item>[130bpm]</item>
-        <item>[135bpm]</item>
-        <item>[140bpm]</item>
+        <item>[125bpm Loops]</item>
+        <item>[130bpm Loops]</item>
+        <item>[135bpm Loops]</item>
+        <item>[140bpm Loops]</item>
         <item>内部サウンド</item>
         <item>外部サウンド</item>
         <item>Musicフォルダのサウンド"</item>

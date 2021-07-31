@@ -92,6 +92,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     private lateinit var bCustomAdapter: CustomAdapter
     private lateinit var cCustomAdapter: CustomAdapter
     private lateinit var dCustomAdapter: CustomAdapter
+    private lateinit var eCustomAdapter: CustomAdapter
 
     private lateinit var nCustomAdapter: CustomAdapter
     private lateinit var oCustomAdapter: CustomAdapter
@@ -105,6 +106,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     private lateinit var bSoundList: MutableList<SoundList>
     private lateinit var cSoundList: MutableList<SoundList>
     private lateinit var dSoundList: MutableList<SoundList>
+    private lateinit var eSoundList: MutableList<SoundList>
 
     private lateinit var nSoundList: MutableList<SoundList>
     private lateinit var oSoundList: MutableList<SoundList>
@@ -198,24 +200,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             SoundList("break_cb_04.ogg"),
             SoundList("break_cb_05.ogg"),
             SoundList("break_cb_06.ogg"),
-            SoundList("ca_clhat01.ogg"),
-            SoundList("ca_clhat02.ogg"),
-            SoundList("ca_kick01.ogg"),
-            SoundList("ca_kick02.ogg"),
-            SoundList("ca_ophat01.ogg"),
-            SoundList("ca_ophat02.ogg"),
-            SoundList("ca_snare01.ogg"),
-            SoundList("ca_snare02.ogg"),
-            SoundList("ca_tamb01.ogg"),
-            SoundList("ca_tamb02.ogg"),
-            SoundList("cb_clhat01.ogg"),
-            SoundList("cb_clhat02.ogg"),
-            SoundList("cb_kick01.ogg"),
-            SoundList("cb_kick02.ogg"),
-            SoundList("cb_ophat01.ogg"),
-            SoundList("cb_ophat02.ogg"),
-            SoundList("cb_snare01.ogg"),
-            SoundList("cb_snare02.ogg"),
             SoundList("chirper_a_01.ogg"),
             SoundList("chirper_a_02.ogg"),
             SoundList("chirper_a_03.ogg"),
@@ -366,17 +350,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             SoundList("breakfx_d_08.ogg"),
             SoundList("breakfx_d_09.ogg"),
             SoundList("breakfx_d_10.ogg"),
-            SoundList("d_clhat01.ogg"),
-            SoundList("d_clhat02.ogg"),
-            SoundList("d_crash.ogg"),
-            SoundList("d_kick01.ogg"),
-            SoundList("d_kick02.ogg"),
-            SoundList("d_ophat.ogg"),
-            SoundList("d_ride01.ogg"),
-            SoundList("d_ride02.ogg"),
-            SoundList("d_ridebell.ogg"),
-            SoundList("d_snare01.ogg"),
-            SoundList("d_snare02.ogg"),
             SoundList("gnatter_a_01.ogg"),
             SoundList("gnatter_a_02.ogg"),
             SoundList("gnatter_a_03.ogg"),
@@ -436,30 +409,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             SoundList("skbass_g_s3.ogg")
         )
         dSoundList = arrayListOf(
-            SoundList("b_bongo.ogg"),
-            SoundList("b_clhat_01.ogg"),
-            SoundList("b_clhat_02.ogg"),
-            SoundList("b_conga_01.ogg"),
-            SoundList("b_conga_02.ogg"),
-            SoundList("b_conga_03.ogg"),
-            SoundList("b_fizz_01.ogg"),
-            SoundList("b_fizz_02.ogg"),
-            SoundList("b_fizz_03.ogg"),
-            SoundList("b_kick_01.ogg"),
-            SoundList("b_kick_02.ogg"),
-            SoundList("b_ophat_02.ogg"),
-            SoundList("b_ophat01.ogg"),
-            SoundList("b_ride_01.ogg"),
-            SoundList("b_ride_02.ogg"),
-            SoundList("b_ride_03.ogg"),
-            SoundList("b_shaker.ogg"),
-            SoundList("b_snare_01.ogg"),
-            SoundList("b_snare_02.ogg"),
-            SoundList("b_snare_03.ogg"),
-            SoundList("b_tamb_01.ogg"),
-            SoundList("b_tamb_02.ogg"),
-            SoundList("b_tamb_03.ogg"),
-            SoundList("b_woodblock.ogg"),
             SoundList("bludge_a_01.ogg"),
             SoundList("bludge_a_02.ogg"),
             SoundList("bludge_a_03.ogg"),
@@ -525,6 +474,63 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             SoundList("thereman_g_04.ogg")
         )
 
+        eSoundList = arrayListOf(
+            SoundList("b_bongo.ogg"),
+            SoundList("b_clhat_01.ogg"),
+            SoundList("b_clhat_02.ogg"),
+            SoundList("b_conga_01.ogg"),
+            SoundList("b_conga_02.ogg"),
+            SoundList("b_conga_03.ogg"),
+            SoundList("b_fizz_01.ogg"),
+            SoundList("b_fizz_02.ogg"),
+            SoundList("b_fizz_03.ogg"),
+            SoundList("b_kick_01.ogg"),
+            SoundList("b_kick_02.ogg"),
+            SoundList("b_ophat_02.ogg"),
+            SoundList("b_ophat01.ogg"),
+            SoundList("b_ride_01.ogg"),
+            SoundList("b_ride_02.ogg"),
+            SoundList("b_ride_03.ogg"),
+            SoundList("b_shaker.ogg"),
+            SoundList("b_snare_01.ogg"),
+            SoundList("b_snare_02.ogg"),
+            SoundList("b_snare_03.ogg"),
+            SoundList("b_tamb_01.ogg"),
+            SoundList("b_tamb_02.ogg"),
+            SoundList("b_tamb_03.ogg"),
+            SoundList("b_woodblock.ogg"),
+            SoundList("b_woodblock.ogg"),
+            SoundList("ca_clhat01.ogg"),
+            SoundList("ca_clhat02.ogg"),
+            SoundList("ca_kick01.ogg"),
+            SoundList("ca_kick02.ogg"),
+            SoundList("ca_ophat01.ogg"),
+            SoundList("ca_ophat02.ogg"),
+            SoundList("ca_snare01.ogg"),
+            SoundList("ca_snare02.ogg"),
+            SoundList("ca_tamb01.ogg"),
+            SoundList("ca_tamb02.ogg"),
+            SoundList("cb_clhat01.ogg"),
+            SoundList("cb_clhat02.ogg"),
+            SoundList("cb_kick01.ogg"),
+            SoundList("cb_kick02.ogg"),
+            SoundList("cb_ophat01.ogg"),
+            SoundList("cb_ophat02.ogg"),
+            SoundList("cb_snare01.ogg"),
+            SoundList("cb_snare02.ogg"),
+            SoundList("d_clhat01.ogg"),
+            SoundList("d_clhat02.ogg"),
+            SoundList("d_crash.ogg"),
+            SoundList("d_kick01.ogg"),
+            SoundList("d_kick02.ogg"),
+            SoundList("d_ophat.ogg"),
+            SoundList("d_ride01.ogg"),
+            SoundList("d_ride02.ogg"),
+            SoundList("d_ridebell.ogg"),
+            SoundList("d_snare01.ogg"),
+            SoundList("d_snare02.ogg")
+        )
+
         nSoundList = arrayListOf(
             SoundList("boos_a_01.ogg"),
             SoundList("boos_a_02.ogg"),
@@ -563,24 +569,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             SoundList("break_cb_04.ogg"),
             SoundList("break_cb_05.ogg"),
             SoundList("break_cb_06.ogg"),
-            SoundList("ca_clhat01.ogg"),
-            SoundList("ca_clhat02.ogg"),
-            SoundList("ca_kick01.ogg"),
-            SoundList("ca_kick02.ogg"),
-            SoundList("ca_ophat01.ogg"),
-            SoundList("ca_ophat02.ogg"),
-            SoundList("ca_snare01.ogg"),
-            SoundList("ca_snare02.ogg"),
-            SoundList("ca_tamb01.ogg"),
-            SoundList("ca_tamb02.ogg"),
-            SoundList("cb_clhat01.ogg"),
-            SoundList("cb_clhat02.ogg"),
-            SoundList("cb_kick01.ogg"),
-            SoundList("cb_kick02.ogg"),
-            SoundList("cb_ophat01.ogg"),
-            SoundList("cb_ophat02.ogg"),
-            SoundList("cb_snare01.ogg"),
-            SoundList("cb_snare02.ogg"),
             SoundList("chirper_a_01.ogg"),
             SoundList("chirper_a_02.ogg"),
             SoundList("chirper_a_03.ogg"),
@@ -731,17 +719,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             SoundList("breakfx_d_08.ogg"),
             SoundList("breakfx_d_09.ogg"),
             SoundList("breakfx_d_10.ogg"),
-            SoundList("d_clhat01.ogg"),
-            SoundList("d_clhat02.ogg"),
-            SoundList("d_crash.ogg"),
-            SoundList("d_kick01.ogg"),
-            SoundList("d_kick02.ogg"),
-            SoundList("d_ophat.ogg"),
-            SoundList("d_ride01.ogg"),
-            SoundList("d_ride02.ogg"),
-            SoundList("d_ridebell.ogg"),
-            SoundList("d_snare01.ogg"),
-            SoundList("d_snare02.ogg"),
             SoundList("gnatter_a_01.ogg"),
             SoundList("gnatter_a_02.ogg"),
             SoundList("gnatter_a_03.ogg"),
@@ -801,30 +778,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             SoundList("skbass_g_s3.ogg")
         )
         qSoundList = arrayListOf(
-            SoundList("b_bongo.ogg"),
-            SoundList("b_clhat_01.ogg"),
-            SoundList("b_clhat_02.ogg"),
-            SoundList("b_conga_01.ogg"),
-            SoundList("b_conga_02.ogg"),
-            SoundList("b_conga_03.ogg"),
-            SoundList("b_fizz_01.ogg"),
-            SoundList("b_fizz_02.ogg"),
-            SoundList("b_fizz_03.ogg"),
-            SoundList("b_kick_01.ogg"),
-            SoundList("b_kick_02.ogg"),
-            SoundList("b_ophat_02.ogg"),
-            SoundList("b_ophat01.ogg"),
-            SoundList("b_ride_01.ogg"),
-            SoundList("b_ride_02.ogg"),
-            SoundList("b_ride_03.ogg"),
-            SoundList("b_shaker.ogg"),
-            SoundList("b_snare_01.ogg"),
-            SoundList("b_snare_02.ogg"),
-            SoundList("b_snare_03.ogg"),
-            SoundList("b_tamb_01.ogg"),
-            SoundList("b_tamb_02.ogg"),
-            SoundList("b_tamb_03.ogg"),
-            SoundList("b_woodblock.ogg"),
             SoundList("bludge_a_01.ogg"),
             SoundList("bludge_a_02.ogg"),
             SoundList("bludge_a_03.ogg"),
@@ -899,6 +852,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         bCustomAdapter = CustomAdapter(this, bSoundList, this)
         cCustomAdapter = CustomAdapter(this, cSoundList, this)
         dCustomAdapter = CustomAdapter(this, dSoundList, this)
+        eCustomAdapter = CustomAdapter(this, eSoundList, this)
         nCustomAdapter = CustomAdapter(this, nSoundList, this)
         oCustomAdapter = CustomAdapter(this, oSoundList, this)
         pCustomAdapter = CustomAdapter(this, pSoundList, this)
@@ -953,42 +907,48 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 when(position){
                     0 -> {
                         radioButton19.performClick()
+                        soundListView.adapter = eCustomAdapter
+                        eCustomAdapter.notifyDataSetChanged()
+                        soundListView.visibility = View.VISIBLE
+                    }
+                    1 -> {
+                        radioButton19.performClick()
                         soundListView.adapter = aCustomAdapter
                         aCustomAdapter.notifyDataSetChanged()
                         soundListView.visibility = View.VISIBLE
                     }
-                    1 -> {
+                    2 -> {
                         radioButton19.performClick()
                         soundListView.adapter = bCustomAdapter
                         bCustomAdapter.notifyDataSetChanged()
                         soundListView.visibility = View.VISIBLE
                     }
-                    2 -> {
+                    3 -> {
                         radioButton19.performClick()
                         soundListView.adapter = cCustomAdapter
                         cCustomAdapter.notifyDataSetChanged()
                         soundListView.visibility = View.VISIBLE
                     }
-                    3 -> {
+                    4 -> {
                         radioButton19.performClick()
                         soundListView.adapter = dCustomAdapter
                         dCustomAdapter.notifyDataSetChanged()
                         soundListView.visibility = View.VISIBLE
                     }
-                    4 -> {
+                    5 -> {
                         radioButton18.performClick()
                         soundListView.adapter = sCustomAdapter
                         sCustomAdapter.notifyDataSetChanged()
                         soundListView.visibility = View.VISIBLE
                     }
-                    5 -> {
+                    6 -> {
                         selectEX()
                         radioButton18.performClick()
                         soundListView.adapter = tCustomAdapter
                         tCustomAdapter.notifyDataSetChanged()
                         soundListView.visibility = View.VISIBLE
                     }
-                    6 -> selectAudio()
+                    7 -> selectAudio()
                 }
             }
 
