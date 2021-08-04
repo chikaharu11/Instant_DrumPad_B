@@ -46,6 +46,20 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     private var audioName = ""
     private var mpDuration = 0
     private var mpDuration2 = 0
+    private var mpDuration3 = 0
+    private var mpDuration4 = 0
+    private var mpDuration5 = 0
+    private var mpDuration6 = 0
+    private var mpDuration7 = 0
+    private var mpDuration8 = 0
+    private var mpDuration9 = 0
+    private var mpDuration10 = 0
+    private var mpDuration11 = 0
+    private var mpDuration12 = 0
+    private var mpDuration13 = 0
+    private var mpDuration14 = 0
+    private var mpDuration15 = 0
+
     var start = 0
     var stop = 0
 
@@ -88,6 +102,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     private lateinit var soundPool: SoundPool
 
     private lateinit var mp: MediaPlayer
+
+    private lateinit var getmpDuration: MediaPlayer
 
     private lateinit var lmp: LoopMediaPlayer
 
@@ -1015,7 +1031,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound1, 1.0f, 1.0f, 1, 0, 1.0f)
-                hoge(imageView,mpDuration)
+                effect(imageView,mpDuration)
                 }
                 false
         }
@@ -1025,7 +1041,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound2, 1.0f, 1.0f, 1, 0, 1.0f)
-                hoge(imageView2,mpDuration2)
+                effect(imageView2,mpDuration2)
                 }
                 false
         }
@@ -1035,6 +1051,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound3, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView3,mpDuration3)
                 }
                 false
         }
@@ -1044,6 +1061,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound4, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView4,mpDuration4)
                 }
                 false
         }
@@ -1053,6 +1071,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound5, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView5,mpDuration5)
                 }
                 false
         }
@@ -1062,6 +1081,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound6, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView6,mpDuration6)
                 }
                 false
         }
@@ -1071,6 +1091,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound7, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView7,mpDuration7)
                 }
                 false
         }
@@ -1080,6 +1101,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound8, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView8,mpDuration8)
                 }
                 false
         }
@@ -1089,6 +1111,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound9, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView9,mpDuration9)
                 }
                 false
 
@@ -1099,6 +1122,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound10, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView10,mpDuration10)
                 }
                 false
         }
@@ -1108,6 +1132,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound11, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView11,mpDuration11)
                 }
                 false
         }
@@ -1117,6 +1142,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound12, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView12,mpDuration12)
                 }
                 false
         }
@@ -1126,6 +1152,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound13, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView13,mpDuration13)
                 }
                 false
         }
@@ -1135,6 +1162,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound14, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView14,mpDuration14)
                 }
                 false
         }
@@ -1144,6 +1172,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound15, 1.0f, 1.0f, 0, 0, 1.0f)
+                effect(imageView15,mpDuration15)
                 }
                 false
         }
@@ -1226,7 +1255,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         }
     }
 
-    fun hoge(imageView: ImageView, mpDuration: Int) {
+    private fun effect(imageView: ImageView, mpDuration: Int) {
         val cx = imageView.width / 2
         val cy = imageView.height / 2
 
@@ -1411,11 +1440,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound1 = soundPool.load(assets.openFd(soundList.name), 1)
-                mp.release()
-                mp = MediaPlayer()
-                mp.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
-                mp.prepare()
-                mpDuration = mp.duration
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1425,11 +1454,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView2.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView2.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound2 = soundPool.load(assets.openFd(soundList.name), 1)
-                mp.release()
-                mp = MediaPlayer()
-                mp.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
-                mp.prepare()
-                mpDuration2 = mp.duration
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration2 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1439,6 +1468,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView3.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView3.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound3 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration3 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1448,6 +1482,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView4.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView4.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound4 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration4 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1457,6 +1496,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView5.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView5.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound5 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration5 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1466,6 +1510,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView6.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView6.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound6 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration6 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1475,6 +1524,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView7.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView7.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound7 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration7 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1484,6 +1538,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView8.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView8.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound8 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration8 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1493,6 +1552,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView9.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView9.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound9 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration9 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1502,6 +1566,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView10.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView10.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound10 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration10 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1511,6 +1580,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView11.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView11.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound11 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration11 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1520,6 +1594,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView12.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView12.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound12 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration12 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1529,6 +1608,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView13.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView13.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound13 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration13 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1538,6 +1622,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView14.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView14.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound14 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration14 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
@@ -1547,6 +1636,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView15.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView15.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound15 = soundPool.load(assets.openFd(soundList.name), 1)
+                getmpDuration = MediaPlayer()
+                getmpDuration.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                getmpDuration.prepare()
+                mpDuration15 = getmpDuration.duration
+                getmpDuration.release()
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
