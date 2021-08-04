@@ -10,6 +10,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.graphics.drawable.ColorDrawable
 import android.media.*
 import android.media.projection.MediaProjectionManager
@@ -32,7 +33,6 @@ import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.custom_dialog.*
-import kotlinx.coroutines.runBlocking
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.math.hypot
@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     private val handler = Handler()
     private var audioName = ""
     private var mpDuration = 0
+    private var mpDuration2 = 0
     var start = 0
     var stop = 0
 
@@ -1014,30 +1015,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound1, 1.0f, 1.0f, 1, 0, 1.0f)
-
-                val cx = imageView.width / 2
-                val cy = imageView.height / 2
-
-                val initialRadius = hypot(cx.toDouble(), cy.toDouble()).toFloat()
-
-                val anim = ViewAnimationUtils.createCircularReveal(imageView, cx, cy, initialRadius, 0f)
-
-                anim.addListener(object : AnimatorListenerAdapter() {
-
-                    override fun onAnimationStart(animation: Animator?) {
-                        super.onAnimationStart(animation)
-                        imageView.setColorFilter(R.color.white)
-                    }
-
-                    override fun onAnimationEnd(animation: Animator) {
-                        super.onAnimationEnd(animation)
-                        imageView.setColorFilter(R.color.black)
-                    }
-                })
-
-                anim.duration = mpDuration.toLong()
-                anim.start()
-
+                hoge(imageView,mpDuration)
                 }
                 false
         }
@@ -1047,6 +1025,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound2, 1.0f, 1.0f, 1, 0, 1.0f)
+                hoge(imageView2,mpDuration2)
                 }
                 false
         }
@@ -1247,6 +1226,31 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         }
     }
 
+    fun hoge(imageView: ImageView, mpDuration: Int) {
+        val cx = imageView.width / 2
+        val cy = imageView.height / 2
+
+        val initialRadius = hypot(cx.toDouble(), cy.toDouble()).toFloat()
+
+        val anim = ViewAnimationUtils.createCircularReveal(imageView, cx, cy, initialRadius, 0f)
+
+        anim.addListener(object : AnimatorListenerAdapter() {
+
+            override fun onAnimationStart(animation: Animator?) {
+                super.onAnimationStart(animation)
+                imageView.setColorFilter(Color.parseColor("#2c2a34"), PorterDuff.Mode.SRC_IN)
+            }
+
+            override fun onAnimationEnd(animation: Animator) {
+                super.onAnimationEnd(animation)
+                imageView.setColorFilter(Color.parseColor("#2c2a34"), PorterDuff.Mode.SRC_IN)
+            }
+        })
+
+        anim.duration = mpDuration.toLong()
+        anim.start()
+    }
+
     override fun clicked(soundList: SoundList) {
         sound16 = if (radioButton18.isChecked) {
             soundPool.load(soundList.name, 1)
@@ -1421,6 +1425,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView2.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView2.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound2 = soundPool.load(assets.openFd(soundList.name), 1)
+                mp.release()
+                mp = MediaPlayer()
+                mp.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                mp.prepare()
+                mpDuration2 = mp.duration
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }
