@@ -1,6 +1,8 @@
 package jp.chikaharu11.instant_drumpad_breakbeats
 
 import android.Manifest
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlertDialog
@@ -18,10 +20,7 @@ import android.os.Environment
 import android.os.Handler
 import android.provider.DocumentsContract
 import android.provider.MediaStore
-import android.view.Menu
-import android.view.MenuItem
-import android.view.MotionEvent
-import android.view.View
+import android.view.*
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -33,8 +32,10 @@ import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.custom_dialog.*
+import kotlinx.coroutines.runBlocking
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.math.hypot
 
 
 class MainActivity : AppCompatActivity(), CustomAdapterListener {
@@ -43,6 +44,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
     private val handler = Handler()
     private var audioName = ""
+    private var mpDuration = 0
     var start = 0
     var stop = 0
 
@@ -1006,11 +1008,36 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         lmp = LoopMediaPlayer.create(this, Uri.parse("android.resource://" + packageName + "/raw/" + R.raw.break_a_01))
 
 
+
         imageView.setOnTouchListener { _, event ->
             if (listView.isVisible) {
                 listView.visibility = View.INVISIBLE
             } else if (event.action == MotionEvent.ACTION_DOWN) {
                         soundPool.play(sound1, 1.0f, 1.0f, 1, 0, 1.0f)
+
+                val cx = imageView.width / 2
+                val cy = imageView.height / 2
+
+                val initialRadius = hypot(cx.toDouble(), cy.toDouble()).toFloat()
+
+                val anim = ViewAnimationUtils.createCircularReveal(imageView, cx, cy, initialRadius, 0f)
+
+                anim.addListener(object : AnimatorListenerAdapter() {
+
+                    override fun onAnimationStart(animation: Animator?) {
+                        super.onAnimationStart(animation)
+                        imageView.setColorFilter(R.color.white)
+                    }
+
+                    override fun onAnimationEnd(animation: Animator) {
+                        super.onAnimationEnd(animation)
+                        imageView.setColorFilter(R.color.black)
+                    }
+                })
+
+                anim.duration = mpDuration.toLong()
+                anim.start()
+
                 }
                 false
         }
@@ -1380,6 +1407,11 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView.setColorFilter(Color.parseColor("#6B6A71"))
                 handler.postDelayed({ imageView.setColorFilter(Color.parseColor("#2C2A34")) }, 1000)
                 sound1 = soundPool.load(assets.openFd(soundList.name), 1)
+                mp.release()
+                mp = MediaPlayer()
+                mp.setDataSource(assets.openFd(soundList.name).fileDescriptor, assets.openFd(soundList.name).startOffset, assets.openFd(soundList.name).declaredLength)
+                mp.prepare()
+                mpDuration = mp.duration
                 soundPool.setOnLoadCompleteListener{ soundPool, _, _ ->
                     soundPool.stop(soundPool.play(sound16, 1.0f, 1.0f, 0, 0, 1.0f))
                 }

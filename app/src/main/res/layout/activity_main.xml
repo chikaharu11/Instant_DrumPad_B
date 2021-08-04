@@ -10,6 +10,24 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/my_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitXY"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/square2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -19,7 +37,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +53,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
-        android:foreground="@drawable/my_ripple"
+
         android:contentDescription="@string/todo2"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
@@ -55,7 +73,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo3"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
@@ -73,7 +91,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo4"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +109,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo5"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -109,7 +127,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo6"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -127,7 +145,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo7"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toStartOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +163,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo8"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView11"
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
@@ -163,7 +181,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo9"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
@@ -181,7 +199,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo10"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView13"
         app:layout_constraintEnd_toStartOf="@+id/imageView11"
         app:layout_constraintStart_toStartOf="parent"
@@ -199,7 +217,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo11"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView14"
         app:layout_constraintEnd_toStartOf="@+id/imageView12"
         app:layout_constraintStart_toEndOf="@+id/imageView10"
@@ -217,7 +235,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo12"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@+id/imageView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
@@ -235,7 +253,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo13"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintEnd_toStartOf="@+id/imageView14"
         app:layout_constraintStart_toStartOf="parent"
@@ -253,7 +271,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo14"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintEnd_toStartOf="@+id/imageView15"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
@@ -271,7 +289,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/todo15"
         android:scaleType="fitXY"
-        android:foreground="@drawable/my_ripple"
+
         app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView14"
