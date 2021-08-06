@@ -50,15 +50,15 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
     private var mpDuration4 = 0
     private var mpDuration5 = 0
     private var mpDuration6 = 0
-    private var mpDuration7 = 0
-    private var mpDuration8 = 0
-    private var mpDuration9 = 0
-    private var mpDuration10 = 0
-    private var mpDuration11 = 0
-    private var mpDuration12 = 0
-    private var mpDuration13 = 0
-    private var mpDuration14 = 0
-    private var mpDuration15 = 0
+    private var mpDuration7 = 1846
+    private var mpDuration8 = 1846
+    private var mpDuration9 = 1846
+    private var mpDuration10 = 1846
+    private var mpDuration11 = 1846
+    private var mpDuration12 = 1846
+    private var mpDuration13 = 1846
+    private var mpDuration14 = 1846
+    private var mpDuration15 = 1846
 
     var start = 0
     var stop = 0
@@ -1004,23 +1004,23 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
         sound6 = soundPool.load(assets.openFd("b_conga_03.ogg"), 1)
 
-        sound7 = soundPool.load(assets.openFd("b_ophat_02.ogg"), 1)
+        sound7 = soundPool.load(assets.openFd("break_a_01.ogg"), 1)
 
-        sound8 = soundPool.load(assets.openFd("ca_kick01.ogg"), 1)
+        sound8 = soundPool.load(assets.openFd("break_a_02.ogg"), 1)
 
-        sound9 = soundPool.load(assets.openFd("ca_kick02.ogg"), 1)
+        sound9 = soundPool.load(assets.openFd("break_a_03.ogg"), 1)
 
-        sound10 = soundPool.load(assets.openFd("break_b_01.ogg"), 1)
+        sound10 = soundPool.load(assets.openFd("break_a_04.ogg"), 1)
 
-        sound11 = soundPool.load(assets.openFd("break_b_04.ogg"), 1)
+        sound11 = soundPool.load(assets.openFd("break_a_05.ogg"), 1)
 
-        sound12 = soundPool.load(assets.openFd("chirper_a_01.ogg"), 1)
+        sound12 = soundPool.load(assets.openFd("break_a_06.ogg"), 1)
 
-        sound13 = soundPool.load(assets.openFd("chirper_a_02.ogg"), 1)
+        sound13 = soundPool.load(assets.openFd("breakfx_a_01.ogg"), 1)
 
-        sound14 = soundPool.load(assets.openFd("goingbass_a_02.ogg"), 1)
+        sound14 = soundPool.load(assets.openFd("breakfx_a_02.ogg"), 1)
 
-        sound15 = soundPool.load(assets.openFd("goingbass_a_03.ogg"), 1)
+        sound15 = soundPool.load(assets.openFd("breakfx_a_03.ogg"), 1)
 
         lmp = LoopMediaPlayer.create(this, Uri.parse("android.resource://" + packageName + "/raw/" + R.raw.break_a_01))
 
@@ -1275,6 +1275,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 imageView.setColorFilter(Color.parseColor("#2c2a34"), PorterDuff.Mode.SRC_IN)
             }
         })
+
+        println(mpDuration)
 
         anim.duration = mpDuration.toLong()
         anim.start()
