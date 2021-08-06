@@ -44,12 +44,12 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
     private val handler = Handler()
     private var audioName = ""
-    private var mpDuration = 0
-    private var mpDuration2 = 0
-    private var mpDuration3 = 0
-    private var mpDuration4 = 0
-    private var mpDuration5 = 0
-    private var mpDuration6 = 0
+    private var mpDuration = 429
+    private var mpDuration2 = 429
+    private var mpDuration3 = 414
+    private var mpDuration4 = 429
+    private var mpDuration5 = 429
+    private var mpDuration6 = 429
     private var mpDuration7 = 1846
     private var mpDuration8 = 1846
     private var mpDuration9 = 1846
@@ -158,21 +158,21 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView.text = "ca_snare01"
-        textView2.text = "b_clhat_01"
-        textView3.text = "b_fizz_01"
-        textView4.text = "b_conga_01"
-        textView5.text = "b_conga_02"
-        textView6.text = "b_conga_03"
-        textView7.text = "b_ophat_02"
-        textView8.text = "ca_kick01"
-        textView9.text = "ca_kick02"
-        textView10.text = "break_b_01"
-        textView11.text = "break_b_04"
-        textView12.text = "chirper_a_01"
-        textView13.text = "chirper_a_02"
-        textView14.text = "goingbass_a_02"
-        textView15.text = "goingbass_a_03"
+        textView.text = "b_snare_01"
+        textView2.text = "b_snare_02"
+        textView3.text = "b_tamb_01"
+        textView4.text = "b_tamb_02"
+        textView5.text = "b_kick_01"
+        textView6.text = "b_kick_02"
+        textView7.text = "break_a_01"
+        textView8.text = "break_a_02"
+        textView9.text = "break_a_03"
+        textView10.text = "break_a_04"
+        textView11.text = "break_a_05"
+        textView12.text = "break_a_06"
+        textView13.text = "breakfx_a_01"
+        textView14.text = "breakfx_a_02"
+        textView15.text = "breakfx_a_03"
 
         MobileAds.initialize(this) {}
 
@@ -992,17 +992,17 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 .setMaxStreams(20)
                 .build()
 
-        sound1 = soundPool.load(assets.openFd("ca_snare01.ogg"), 1)
+        sound1 = soundPool.load(assets.openFd("b_snare_01.ogg"), 1)
 
-        sound2 = soundPool.load(assets.openFd("b_clhat_01.ogg"), 1)
+        sound2 = soundPool.load(assets.openFd("b_snare_02.ogg"), 1)
 
-        sound3 = soundPool.load(assets.openFd("b_fizz_01.ogg"), 1)
+        sound3 = soundPool.load(assets.openFd("b_tamb_01.ogg"), 1)
 
-        sound4 = soundPool.load(assets.openFd("b_conga_01.ogg"), 1)
+        sound4 = soundPool.load(assets.openFd("b_tamb_02.ogg"), 1)
 
-        sound5 = soundPool.load(assets.openFd("b_conga_02.ogg"), 1)
+        sound5 = soundPool.load(assets.openFd("b_kick_01.ogg"), 1)
 
-        sound6 = soundPool.load(assets.openFd("b_conga_03.ogg"), 1)
+        sound6 = soundPool.load(assets.openFd("b_kick_02.ogg"), 1)
 
         sound7 = soundPool.load(assets.openFd("break_a_01.ogg"), 1)
 
